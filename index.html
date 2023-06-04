@@ -23,6 +23,7 @@
         <div class="card p-md-4">
             <div class="card-body">
             <h5 class="card-title mb-3">Ambil Titik koordinat</h5>
+            <div id="map-canvas"></div>
             <form onLoad="initGeolocation();" id="tampilkan" NAME="rd" METHOD="POST">
                 <div class="form-group">
                     <label for="lat">Latitude</label>
@@ -41,13 +42,13 @@
                   </div>
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="button" onclick="getLocation()" class="btn btn-primary"><i class="fa-solid fa-location-dot text-danger shadow"></i> Lihat lokasi</button>
+                    <button type="button" onclick="getLocation(); showlocation()" class="btn btn-primary"><i class="fa-solid fa-location-dot text-danger shadow"></i> Lihat lokasi</button>
                 </div>
             </form>
             </div>
         </div>
     </div>
-    <footer class="fixed-bottom">
+    <footer>
         <div class="container-fluid py-4 bg-dark">
             <div class="container">
                 <p class="text-light text-end">

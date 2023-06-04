@@ -45,3 +45,7 @@
     visibility: visible;
     opacity: 1;
   }
+
+  #map-canvas{
+    height:250px
+  }
