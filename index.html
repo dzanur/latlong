@@ -14,7 +14,7 @@
         </div>
     </nav>
     <div class="container wrapper p-5">
-        <div class="card">
+        <div class="card p-md-4">
             <div class="card-body">
             <h5 class="card-title mb-3">Ambil Titik koordinat</h5>
             <form onLoad="initGeolocation();" id="tampilkan" NAME="rd" METHOD="POST">
@@ -34,11 +34,10 @@
                       <button class="input-group-text bg-primary text-light border-grey" id="basic-addon1" onclick="copy_text()"><i class="fa-regular fa-clipboard"></i></button>
                   </div>
                 </div>
-                <div class="form-row align-items-center">
-              </div>
-                
+                <div class="d-grid gap-2">
+                    <button type="button" onclick="getLocation()" class="btn btn-primary"><i class="fa-solid fa-location-dot text-danger shadow"></i> Lihat lokasi</button>
+                </div>
             </form>
-            <button type="button" onclick="getLocation()" class="btn btn-primary"><i class="fa-solid fa-location-dot text-danger shadow"></i> Lihat lokasi</button>
             </div>
         </div>
     </div>
