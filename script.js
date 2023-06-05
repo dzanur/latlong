@@ -44,8 +44,6 @@ function copy_text() {
     copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
     
-    var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Sukses : " + copyText.value;
   }
 
   function outFunc() {
@@ -83,11 +81,11 @@ map.setCenter(marker.getPosition());
 google.maps.event.addDomListener(window, 'load', initMap);
 function initMap() {
 var mapOptions = {
-center: new google.maps.LatLng(0, 0),
-zoom: 1,
-mapTypeId: google.maps.MapTypeId.ROADMAP
+    center: new google.maps.LatLng(0, 0),
+    zoom: 1,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
 };
-map = new google.maps.Map(document.getElementById("map-canvas"),
-mapOptions);
-
+    map = new google.maps.Map(document.getElementById("map-canvas"),
+    mapOptions);
 }
+
